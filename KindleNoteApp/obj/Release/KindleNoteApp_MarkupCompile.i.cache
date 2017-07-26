@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-J:\KindleNoteApp\KindleNoteApp\obj\Debug\
+J:\KindleNoteApp\KindleNoteApp\obj\Release\
 KindleNoteApp
 none
 false
-DEBUG;TRACE
+TRACE
 J:\KindleNoteApp\KindleNoteApp\App.xaml
 11151548125
 
-10-1966370253
+10-1075887738
 15-55467333
 MainWindow.xaml;
 
-True
+False
 

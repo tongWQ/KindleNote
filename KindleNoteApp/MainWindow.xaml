@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KindleNoteApp"
         mc:Ignorable="d"
         Title="Kindle Note Tool" Height="873" Width="720">
-    <Grid Margin="0,0,0,77">
+    <Grid>
 
         <ComboBox x:Name="comboBoxBooks" HorizontalAlignment="Left" Height="31" Margin="10,38,0,0" VerticalAlignment="Top" Width="497" DropDownOpened="comboBoxBooks_DropDownOpened" />
         <Button x:Name="buttontest" Content="Read" HorizontalAlignment="Left" Height="31" Margin="569,38,0,0" VerticalAlignment="Top" Width="133" Click="buttontest_Click" />
@@ -14,7 +14,7 @@
         <Button x:Name="buttonLoad" Content="Load" HorizontalAlignment="Left" Height="23" Margin="569,10,0,0" VerticalAlignment="Top" Width="133" Click="buttonLoad_Click" />
         <GroupBox x:Name="groupBoxContent" Header="Content" HorizontalAlignment="Stretch" Height="662" Margin="10,93,10,0" VerticalAlignment="Top"   >
             <Grid  >
-                <TextBox x:Name="textBox" HorizontalAlignment="Stretch"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="TextBox"  FontSize="15" Height="620" VerticalAlignment="Top" Margin="10,10,10,0" IsReadOnly="True"/>
+                <TextBox x:Name="textBox" HorizontalAlignment="Stretch"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text=""  FontSize="15" Height="620" VerticalAlignment="Top" Margin="10,10,10,0" IsReadOnly="True"/>
             </Grid>
         </GroupBox>
 

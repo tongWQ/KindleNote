@@ -1,0 +1,15 @@
+J:\KindleNoteApp\KindleNoteApp\bin\Release\KindleNoteApp.exe.config
+J:\KindleNoteApp\KindleNoteApp\bin\Release\KindleNoteApp.exe
+J:\KindleNoteApp\KindleNoteApp\bin\Release\KindleNoteApp.pdb
+J:\KindleNoteApp\KindleNoteApp\bin\Release\NoteManager.dll
+J:\KindleNoteApp\KindleNoteApp\bin\Release\NoteManager.pdb
+J:\KindleNoteApp\KindleNoteApp\obj\Release\MainWindow.g.cs
+J:\KindleNoteApp\KindleNoteApp\obj\Release\App.g.cs
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp_MarkupCompile.cache
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp_MarkupCompile.lref
+J:\KindleNoteApp\KindleNoteApp\obj\Release\MainWindow.baml
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp.g.resources
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp.Properties.Resources.resources
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp.csproj.GenerateResource.Cache
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp.exe
+J:\KindleNoteApp\KindleNoteApp\obj\Release\KindleNoteApp.pdb
