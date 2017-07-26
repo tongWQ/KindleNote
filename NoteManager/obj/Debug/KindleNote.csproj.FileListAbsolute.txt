@@ -1,0 +1,4 @@
+F:\VS2015Projects\KindleNoteApp\NoteManager\bin\Debug\NoteManager.dll
+F:\VS2015Projects\KindleNoteApp\NoteManager\bin\Debug\NoteManager.pdb
+F:\VS2015Projects\KindleNoteApp\NoteManager\obj\Debug\NoteManager.dll
+F:\VS2015Projects\KindleNoteApp\NoteManager\obj\Debug\NoteManager.pdb

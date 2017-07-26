@@ -1,0 +1,22 @@
+﻿<Window x:Class="KindleNoteApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KindleNoteApp"
+        mc:Ignorable="d"
+        Title="Kindle Note Tool" Height="873" Width="720">
+    <Grid Margin="0,0,0,77">
+
+        <ComboBox x:Name="comboBoxBooks" HorizontalAlignment="Left" Height="31" Margin="10,38,0,0" VerticalAlignment="Top" Width="497" DropDownOpened="comboBoxBooks_DropDownOpened" />
+        <Button x:Name="buttontest" Content="Read" HorizontalAlignment="Left" Height="31" Margin="569,38,0,0" VerticalAlignment="Top" Width="133" Click="buttontest_Click" />
+        <TextBox x:Name="textBoxTXTPath" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="497" Margin="10,10,0,0" />
+        <Button x:Name="buttonLoad" Content="Load" HorizontalAlignment="Left" Height="23" Margin="569,10,0,0" VerticalAlignment="Top" Width="133" Click="buttonLoad_Click" />
+        <GroupBox x:Name="groupBoxContent" Header="Content" HorizontalAlignment="Stretch" Height="662" Margin="10,93,10,0" VerticalAlignment="Top"   >
+            <Grid  >
+                <TextBox x:Name="textBox" HorizontalAlignment="Stretch"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="TextBox"  FontSize="15" Height="620" VerticalAlignment="Top" Margin="10,10,10,0" IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
