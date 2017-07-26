@@ -11,6 +11,6 @@
 3.点击Load，在弹出的窗口中到步骤3的路径下找到My Clippings.txt</br>
 4.点击Read左边的下拉框（Combobox）选择一本书</br>
 5.点击Read</br>
-
+6.换一本书查看重复步骤4&5即可</br>
 运行效果：</br>
 ![](https://github.com/tongWQ/twqqwt/blob/master/demo.PNG)
