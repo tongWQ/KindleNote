@@ -6,17 +6,19 @@
         xmlns:local="clr-namespace:KindleNoteApp"
         mc:Ignorable="d"
         Title="Kindle Note Tool" Height="873" Width="720">
-    <Grid>
+    <Grid x:Name="gridGeneral">
 
         <ComboBox x:Name="comboBoxBooks" HorizontalAlignment="Left" Height="31" Margin="10,38,0,0" VerticalAlignment="Top" Width="497" DropDownOpened="comboBoxBooks_DropDownOpened" />
         <Button x:Name="buttontest" Content="Read" HorizontalAlignment="Left" Height="31" Margin="569,38,0,0" VerticalAlignment="Top" Width="133" Click="buttontest_Click" />
         <TextBox x:Name="textBoxTXTPath" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="497" Margin="10,10,0,0" />
         <Button x:Name="buttonLoad" Content="Load" HorizontalAlignment="Left" Height="23" Margin="569,10,0,0" VerticalAlignment="Top" Width="133" Click="buttonLoad_Click" />
-        <GroupBox x:Name="groupBoxContent" Header="Content" HorizontalAlignment="Stretch" Height="662" Margin="10,93,10,0" VerticalAlignment="Top"   >
-            <Grid  >
-                <TextBox x:Name="textBox" HorizontalAlignment="Stretch"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text=""  FontSize="15" Height="620" VerticalAlignment="Top" Margin="10,10,10,0" IsReadOnly="True"/>
+        <GroupBox x:Name="groupBoxContent" Header="              " HorizontalAlignment="Stretch" Height="702" Margin="10,0" VerticalAlignment="Bottom"   >
+            <Grid>
+                <TextBox x:Name="textBoxNote" HorizontalAlignment="Stretch"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text=""  FontSize="15" VerticalAlignment="Stretch"  IsReadOnly="True" Margin="0,10"/>
             </Grid>
         </GroupBox>
+        <CheckBox x:Name="checkBoxDark" Content="Deep♂Dark♂Fantasies" HorizontalAlignment="Left" Height="20" Margin="10,74,0,0" VerticalAlignment="Top" Width="156" Checked="checkBoxDark_Checked" Unchecked="checkBoxDark_Unchecked"/>
+        <TextBlock x:Name="textBlockHeader" HorizontalAlignment="Left" Height="22" Margin="22,140,0,0" TextWrapping="Wrap" Text="Content" VerticalAlignment="Top" Width="71"/>
 
     </Grid>
 </Window>

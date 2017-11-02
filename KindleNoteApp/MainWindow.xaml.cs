@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KindleNote;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace KindleNoteApp
 {
@@ -42,12 +42,12 @@ namespace KindleNoteApp
             //comboBox.ItemsSource = notes.GetBookNames();
             try
             {
-                textBox.Text = string.Empty;
+                textBoxNote.Text = string.Empty;
                 NoteManager NM = new NoteManager(notePath);
                 string[] toShow = NM.SearchByBook(comboBoxBooks.SelectedItem.ToString());
                 for (int i = 0; i < toShow.Length; i++)
                 {
-                    textBox.Text += "\r\n" + toShow[i] + "\r\n";
+                    textBoxNote.Text += "\r\n" + toShow[i] + "\r\n";
                 }
             }
             catch(Exception ex)
@@ -62,7 +62,7 @@ namespace KindleNoteApp
         { 
             try
             {
-                OpenFileDialog getTXT = new OpenFileDialog();
+                System.Windows.Forms.OpenFileDialog getTXT = new System.Windows.Forms.OpenFileDialog();
                 getTXT.Filter = "txt File|*.txt";
                 if (getTXT.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
@@ -91,6 +91,67 @@ namespace KindleNoteApp
             //    if(comboBoxBooks.Items[i].ToString()==string.Empty)
                   
             //}
+        }
+
+        private void checkBoxDark_Checked(object sender, RoutedEventArgs e)
+        {
+            gridGeneral.Background = Brushes.Black;
+            
+
+
+            textBoxNote.Background = Brushes.Black;
+            textBoxNote.Foreground = Brushes.White;
+
+            textBoxTXTPath.Background = Brushes.Black;
+            textBoxTXTPath.Foreground = Brushes.White;
+
+            textBlockHeader.Foreground = Brushes.White;
+            textBlockHeader.Background = Brushes.Black;
+
+            checkBoxDark.Foreground = Brushes.White;
+            checkBoxDark.Background = Brushes.Black;
+
+            foreach(UIElement ui in gridGeneral.Children)
+            {
+                if(ui is Button)
+                {
+                   (ui as Button).Background = Brushes.Black;
+                    (ui as Button).Foreground = Brushes.White;
+
+                }
+            }
+            comboBoxBooks.Background = Brushes.Black;
+          //  comboBoxBooks.Foreground = Brushes.White;
+            
+        }
+
+        private void checkBoxDark_Unchecked(object sender, RoutedEventArgs e)
+        {
+            gridGeneral.Background = Brushes.White;
+
+
+
+            textBoxNote.Background = Brushes.White;
+            textBoxNote.Foreground = Brushes.Black;
+
+            textBoxTXTPath.Background = Brushes.White;
+            textBoxTXTPath.Foreground = Brushes.Black;
+
+            textBlockHeader.Foreground = Brushes.Black;
+            textBlockHeader.Background = Brushes.White;
+
+            foreach (UIElement ui in gridGeneral.Children)
+            {
+                if (ui is Button)
+                {
+                    (ui as Button).Background = Brushes.White;
+                    (ui as Button).Foreground = Brushes.Black;
+
+                }
+            }
+            comboBoxBooks.Background = Brushes.White;
+            checkBoxDark.Foreground = Brushes.Black;
+            checkBoxDark.Background = Brushes.White;
         }
     }
 }
